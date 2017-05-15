@@ -11,12 +11,13 @@ public class CommandSignup extends Action{
     public Action execute(HttpServletRequest request){
         User user = new User();
         try {
-            user.setId(0);
+          user.setId(0);
             user.setLogin(Form.getString(request, "login", Pattern.LOGIN));
             user.setEmail(Form.getString(request, "email", Pattern.EMAIL));
             user.setPassword(Form.getString(request, "password", Pattern.PASSWORD));
             user.setFk_roles(2);
             DAO dao = DAO.getDAO();
+
             if (dao.user.create(user))
                 return Actions.LOGIN.command;
             else
@@ -25,5 +26,4 @@ public class CommandSignup extends Action{
             return Actions.ERROR.command;}
     }
 }
-
 

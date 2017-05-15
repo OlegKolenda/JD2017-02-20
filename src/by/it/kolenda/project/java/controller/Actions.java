@@ -15,6 +15,9 @@ enum Actions {
     INDEX {{
         this.command = new CommandIndex();
     }},
+    EDITUSERS {{
+        this.command = new CommandEditUsers();
+    }},
     ERROR {{
         this.command = new CommandError();
     }};
@@ -25,6 +28,8 @@ enum Actions {
     static Action defineFrom(HttpServletRequest request){
 
         String command = request.getParameter("command");
+        if (command==null)
+            command="index";
         Action res;
         try
 

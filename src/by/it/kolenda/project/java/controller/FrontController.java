@@ -1,15 +1,29 @@
 package by.it.kolenda.project.java.controller;
 
+import by.it.kolenda.project.java.beans.Role;
+import by.it.kolenda.project.java.dao.DAO;
+
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 
 public class FrontController extends HttpServlet{
+
+
+    @Override
+    public void init(ServletConfig config) throws ServletException {
+        DAO dao=DAO.getDAO();
+        List<Role> roles=dao.role.getAll("");
+        config.getServletContext().setAttribute("roles",roles);
+        super.init(config);
+    }
 
     private RequestDispatcher dispatcher(Action action){
         return getServletContext().getRequestDispatcher(action.getJsp());

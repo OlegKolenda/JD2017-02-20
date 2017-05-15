@@ -1,9 +1,6 @@
 package by.it.kolenda.project.java.dao;
 
 
-import by.it.kolenda.project.java.beans.Ad;
-import by.it.kolenda.project.java.beans.Role;
-
 public class DAO {
     private static DAO dao;
 
