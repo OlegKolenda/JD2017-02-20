@@ -1,10 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ include file="include/begin-html.jsp" %>
 
-<!-- Основное содержимое -->
 <div class="page-header">
-    <h1>Все объявления</h1>
-    <p class="lead">Пример макета для вывода данных в виде таблицы</p>
+    <h1>Объявления</h1>
+    <p class="lead">Список объявлений по продаже квартир</p>
     <p>${user.email} ${user.login}</p>
 </div>
 

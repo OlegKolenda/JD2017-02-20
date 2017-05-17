@@ -1,8 +1,5 @@
 package by.it.kolenda.project.java.beans;
 
-/**
- * Created by Admin on 29.04.2017.
- */
 public class Ad {
 
     private int id;

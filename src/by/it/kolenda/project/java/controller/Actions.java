@@ -15,8 +15,14 @@ enum Actions {
     INDEX {{
         this.command = new CommandIndex();
     }},
+    PROFILE {{
+        this.command = new CommandProfile();
+    }},
     EDITUSERS {{
         this.command = new CommandEditUsers();
+    }},
+    CREATEAD {{
+        this.command = new CommandCreateAd();
     }},
     ERROR {{
         this.command = new CommandError();

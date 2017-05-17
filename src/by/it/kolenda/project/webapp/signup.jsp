@@ -5,7 +5,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Form Name</legend>
+<legend>Sign up form</legend>
 
 <!-- Text input-->
 <div class="form-group">

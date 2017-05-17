@@ -5,7 +5,7 @@
 <fieldset>
 
 <!-- Form Name -->
-<legend>Создать объявление</legend>
+<legend>Разместить объявление</legend>
 
 <!-- Text input-->
 <div class="form-group">
@@ -74,7 +74,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="postbutton"></label>
   <div class="col-md-4">
-    <button id="postbutton" name="postbutton" class="btn btn-primary">Создать</button>
+    <button id="postbutton" name="postbutton" class="btn btn-primary">Разместить объявление</button>
   </div>
 </div>
 

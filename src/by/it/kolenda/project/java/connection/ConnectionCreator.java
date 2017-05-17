@@ -3,9 +3,7 @@ package by.it.kolenda.project.java.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-/**
- * Created by Admin on 09.05.2017.
- */
+
 public class ConnectionCreator {
 
     private static final String URL_DB =
